@@ -1,0 +1,72 @@
+.da-workspace .dc-body { padding-top:36px; }
+.da-workspace .dc-header { margin-bottom:28px; }
+.da-view-bar { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:0 0 24px; margin-bottom:26px; border-bottom:1px solid #e6ecef; }
+.da-view-tabs { display:flex; gap:5px; padding:4px; border:1px solid #e4e9ed; background:#fff; border-radius:999px; }
+.da-view-tabs button { display:flex; align-items:center; gap:7px; padding:10px 18px; border:0; border-radius:999px; background:none; color:#8b95a5; font-size:11px; cursor:pointer; }
+.da-view-tabs button.active { background:#211f54; color:#fff; }
+.da-view-tabs button:hover:not(.active) { color:#317c83; background:#f1f8f6; }
+.da-view-hint { font-size:10px; color:#a0a8b5; }
+.da-workspace .dc-widget { min-width:0; }
+.da-workspace .dc-doc-badge { color:#536780; }
+.da-workspace .da-status { font-size:8px; font-weight:400; padding:6px 9px; border:1px solid #e8edf0; background:#f8fafb; color:#9ca5b1; white-space:nowrap; }
+.da-workspace .da-status-PARTIAL { background:#fff8e7; border-color:#eee4c3; color:#b09346; }
+.da-workspace .da-status-COMPLETED { background:#eef8f5; border-color:#dfeee9; color:#5a9893; }
+.da-workspace .da-status-CONFLICT,.da-workspace .da-status-CONFLICT_RESOLUTION { background:#fff0ed; border-color:#f1d9d4; color:#b6766c; }
+.da-workspace .da-section { display:flex; align-items:center; gap:8px; font-size:8px; font-weight:500; letter-spacing:.12em; color:#8fa3ae; margin:26px 0 15px; }
+.da-workspace .da-section>span { margin-left:auto; font-size:8px; font-weight:400; letter-spacing:0; color:#a8b1bb; }
+.da-workspace .da-asset { padding:19px; border:1px solid #e1ece8; border-radius:13px; background:#f7fbf9; margin-bottom:17px; }
+.da-workspace .da-asset .dc-field-label { font-size:10px; color:#749198; margin:0 0 12px; }
+.da-asset-kind { font-size:8px; color:#a4b7b6; margin-left:8px; }
+.da-workspace .da-asset-text { border:0; border-radius:0; padding:0; background:none; color:#586f7b; font-size:13px; line-height:2; white-space:pre-wrap; overflow-wrap:anywhere; }
+.da-workspace .da-task { border:1px solid #e5ebee; border-radius:14px; padding:22px; margin-bottom:19px; background:#fff; }
+.da-workspace .da-task-conflict { border-color:#efcec3; background:#fffdf9; }
+.da-workspace .da-task-head { margin-bottom:8px; gap:8px; flex-wrap:wrap; }
+.da-workspace .da-task-name { color:#465776; font-size:13px; font-weight:500; }
+.da-workspace .da-badge { display:inline-flex; align-items:center; gap:4px; font-size:8px; padding:4px 7px; border-radius:99px; font-weight:400; }
+.da-workspace .da-badge-done { margin-left:auto; background:#eff8f5; color:#6a9c96; }
+.da-workspace .da-badge-conflict { background:#fff0e8; color:#c78e6a; }
+.da-workspace .da-muted { font-size:10px; line-height:1.9; color:#97a1b0; }
+.da-workspace .da-instructions { background:#f2f8f6; color:#74928f; border-radius:9px; padding:12px 14px; margin:16px 0; font-size:11px; line-height:1.9; }
+.da-workspace .dc-label-row { gap:8px; margin:17px 0 8px; }
+.da-workspace .dc-label-tag { padding:9px 15px; font-size:11px; }
+.da-workspace .dc-textarea-footer { justify-content:flex-end; }
+.da-workspace .cognitive-row { gap:15px; margin-top:18px; }
+.da-workspace .cognitive-field { min-width:0; }
+.da-workspace .da-selectable { padding:16px; border:1px solid #e4eae9; background:#f8fbf9; border-radius:11px; margin:12px 0; }
+.da-workspace .da-mark { padding:0; border-radius:2px; }
+.da-workspace .da-mark::after { font-weight:500; font-size:8px; }
+.da-workspace .da-chip { max-width:100%; flex-wrap:wrap; font-size:10px; font-weight:400; border-width:1px; border-radius:8px; padding:6px 8px; color:#6a7b92; overflow-wrap:anywhere; }
+.da-workspace .da-chip button { color:#b47f78; }
+.da-workspace .da-chip b { font-weight:500; }
+.da-workspace .da-timeline { background:#f5f9f7; border-color:#e0ebe7; margin:16px 0; }
+.da-workspace .dc-license-check { color:#929eac; font-weight:400; font-size:10px; line-height:1.8; }
+.da-workspace input[type=checkbox] { accent-color:#2a9298; }
+.da-workspace .da-conflict { background:linear-gradient(120deg,#fff9ed,#fff5ee); border:1px solid #f0dfc4; border-radius:13px; padding:20px; color:#ad9572; font-size:11px; line-height:1.9; }
+.da-workspace .da-conflict-title { display:flex; align-items:center; gap:7px; color:#af895b; font-size:12px; font-weight:500; }
+.da-workspace .da-conflict-task { border:1px solid #efe5d5; border-radius:10px; padding:12px; margin:13px 0; }
+.da-workspace .da-conflict-task-name { font-size:10px; font-weight:500; }
+.da-workspace .da-conflict-row { font-size:10px; color:#a19785; }
+.da-workspace .da-actions { align-items:center; gap:16px; }
+.da-workspace .da-actions>.da-muted { flex:1; min-width:150px; max-width:330px; }
+.da-workspace .dc-widget-actions .dc-label-tag.active { font-size:11px; padding:12px 19px; }
+.da-workspace .da-progress-summary { display:flex; align-items:center; gap:22px; padding:2px 0 23px; border-bottom:1px solid #edf1f2; }
+.da-progress-ring { width:95px; height:95px; flex-shrink:0; padding:5px; border-radius:50%; background:conic-gradient(#2bb8bf var(--progress),#e9f3ef 0); }
+.da-progress-ring>span { display:flex; flex-direction:column; gap:6px; align-items:center; justify-content:center; width:100%; height:100%; border-radius:50%; background:#fff; }
+.da-progress-ring strong { color:#39969b; font:600 25px/1 'Plus Jakarta Sans',sans-serif; letter-spacing:-.04em; }
+.da-progress-ring small { color:#9cabb5; font-size:8px; }
+.da-progress-summary>div:last-child { display:flex; flex-direction:column; gap:8px; }
+.da-progress-summary>div:last-child>strong { font:600 24px 'Plus Jakarta Sans',sans-serif; color:#211f54; }
+.da-progress-summary>div:last-child>span { font-size:9px; color:#a0aab8; }
+.da-workspace .da-mini-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px 10px; margin-top:23px; font-size:9px; color:#9aa5b4; }
+.da-workspace .da-mini-grid span { display:flex; flex-direction:column-reverse; gap:8px; }
+.da-workspace .da-mini-grid b { font:500 17px 'Plus Jakarta Sans',sans-serif; color:#667a90; margin:0; }
+.da-privacy-note { display:flex; gap:9px; align-items:flex-start; padding:0 8px; font-size:9px; line-height:1.9; color:#a4afba; }
+.da-privacy-note svg { flex-shrink:0; color:#90b6ad; margin-top:2px; }
+.da-workspace .da-empty { display:flex; padding:55px 28px; }
+.da-empty-icon { display:grid; place-items:center; width:64px; height:64px; border-radius:20px; background:#f0f8f5; color:#6da9a7; margin-bottom:13px; }
+.da-workspace .da-empty-title { margin:0 0 8px; font:500 21px 'Plus Jakarta Sans',sans-serif; letter-spacing:-.03em; color:#587187; }
+.da-workspace .da-empty>p { font-size:11px; color:#98a5b1; line-height:1.9; max-width:380px; margin:0 0 13px; }
+.da-workspace .da-task>p:last-child { color:#8190a2; font-size:12px; line-height:1.8; }
+@media(max-width:1150px) { .da-workspace .da-progress-summary { gap:13px; } .da-progress-ring { width:80px; height:80px; } }
+@media(max-width:1000px) { .da-workspace .dc-right-panel { grid-template-columns:1fr 1fr; } .da-workspace .dc-guide-card { grid-column:auto; } .da-workspace .dc-guide-card ol { grid-template-columns:1fr; gap:19px; } .da-workspace .da-privacy-note { grid-column:1/-1; } }
+@media(max-width:650px) { .da-workspace .dc-body { padding-top:27px; } .da-view-bar { align-items:flex-start; flex-direction:column; gap:14px; } .da-view-tabs { width:100%; justify-content:space-between; } .da-view-tabs button { padding:10px 13px; font-size:10px; flex:1; justify-content:center; } .da-view-hint { font-size:9px; } .da-workspace .da-status { white-space:normal; max-width:100px; text-align:center; } .da-workspace .dc-widget-header { align-items:flex-start; } .da-workspace .da-task { padding:16px; } .da-workspace .da-task-name { font-size:12px; } .da-workspace .da-task-head { gap:5px; } .da-workspace .da-asset { padding:16px; } .da-workspace .da-asset-text { font-size:12px; } .da-workspace .cognitive-row { grid-template-columns:1fr; } .da-workspace .dc-label-tag { padding:9px 12px; font-size:10px; } .da-workspace .dc-right-panel { grid-template-columns:1fr; } .da-workspace .da-privacy-note { grid-column:auto; } .da-workspace .da-actions { align-items:stretch; } .da-workspace .da-actions>.da-muted { width:100%; max-width:none; min-width:0; } .da-workspace .da-conflict { padding:15px; } }

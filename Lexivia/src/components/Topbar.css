@@ -1,0 +1,93 @@
+.topbar {
+    height: 70px;
+    background: #f3f5fd;
+    border-bottom: 1px solid #ececf3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    padding: 0 28px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.topbar-search {
+    width: 520px;
+    height: 42px;
+    background: #ffffff;
+    border: 1px solid #dde4f6;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 14px;
+    gap: 10px;
+}
+
+.topbar-search-icon {
+    color: #667085;
+    font-size: 18px;
+}
+
+.topbar-search input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #344054;
+    font-size: 14px;
+}
+
+.topbar-search button {
+    height: 30px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0d57d8;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.topbar-icon-btn,
+.topbar-profile {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    color: #4b587c;
+    font-size: 18px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.topbar-icon-btn:hover,
+.topbar-profile:hover {
+    background: #e8eefc;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 9px;
+    height: 9px;
+    background: #dc2626;
+    border-radius: 50%;
+    border: 2px solid #f3f5fd;
+}
+
+.topbar-profile {
+    background: #eef3ff;
+}

@@ -1,0 +1,95 @@
+/* DatasetOverview.css — the team dataset page.
+   The page shell (dc-shell, dc-main, dc-widget, dc-panel-card, dc-avatar, dc-label-tag …) comes from DataCollection.css. */
+
+.ds-sub { display: block; font-size: 11px; color: #6f778c; }
+.ds-grow { flex: 1; min-width: 0; }
+.ds-section { margin: 24px 0 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #6f778c; }
+.ds-section-first { margin-top: 4px; }
+
+/* tabs */
+.ds-tabs { display: flex; gap: 4px; border-bottom: 1px solid #e8edf8; margin-bottom: 18px; }
+.ds-tab { background: none; border: none; padding: 10px 16px; font-size: 13px; font-weight: 700; color: #6f778c; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.ds-tab:hover { color: #1359db; }
+.ds-tab.active { color: #1359db; border-bottom-color: #1359db; }
+
+/* stat cards */
+.ds-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.ds-stat { background: #fff; border: 1px solid #e8edf8; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+.ds-stat-num { font-size: 22px; font-weight: 800; color: #1b2340; }
+.ds-stat-lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; color: #6f778c; text-transform: uppercase; }
+.ds-stat-ok .ds-stat-num { color: #15803d; }
+.ds-stat-warn .ds-stat-num { color: #b45309; }
+.ds-stat-bad .ds-stat-num { color: #b91c1c; }
+
+/* cards + rows */
+.ds-card { margin-bottom: 14px; }
+.ds-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.ds-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+.ds-grid > .ds-card { margin-bottom: 0; }
+.ds-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid #f0f2f9; }
+.ds-row:first-of-type { border-top: none; }
+.ds-row-title { font-size: 13px; font-weight: 700; color: #1b2340; display: block; }
+.ds-row-right { text-align: right; display: flex; flex-direction: column; }
+.ds-row-right b { font-size: 15px; color: #1359db; }
+.ds-bar-wrap { display: flex; flex-direction: column; gap: 6px; }
+.ds-mini { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 12px; font-size: 12px; color: #6f778c; }
+.ds-mini b { color: #1b2340; margin-left: 4px; }
+
+/* people */
+.ds-person { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.ds-person-text { display: flex; flex-direction: column; min-width: 0; }
+.ds-annotator { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px solid #f0f2f9; flex-wrap: wrap; }
+.ds-annotator:first-of-type { border-top: none; }
+.ds-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.ds-chip { font-size: 11px; background: #eef3ff; color: #1e40af; border-radius: 999px; padding: 3px 10px; }
+.ds-chip b { margin-left: 4px; }
+
+/* per-day + distribution */
+.ds-days { display: flex; align-items: flex-end; gap: 3px; height: 70px; margin: 8px 0 6px; }
+.ds-day { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.ds-day-bar { width: 100%; background: #1359db; border-radius: 3px 3px 0 0; opacity: 0.85; }
+.ds-dist { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
+.ds-dist-row { display: grid; grid-template-columns: 110px 1fr 32px; align-items: center; gap: 8px; font-size: 12px; }
+.ds-dist-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #1b2340; }
+.ds-dist-track { height: 8px; background: #eef3ff; border-radius: 4px; overflow: hidden; }
+.ds-dist-fill { height: 100%; background: #1359db; border-radius: 4px; }
+.ds-dist-n { text-align: right; color: #6f778c; }
+
+/* samples tab */
+.ds-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 14px; }
+.ds-pager { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 8px; }
+.ds-pager .dc-label-tag:disabled { opacity: 0.45; cursor: default; }
+
+.ds-sample { margin-bottom: 12px; padding: 0; overflow: hidden; }
+.ds-sample-conflict { border-color: #fdba74; }
+.ds-sample-head { width: 100%; display: flex; align-items: center; gap: 10px; padding: 14px 18px; background: none; border: none; cursor: pointer; text-align: left; flex-wrap: wrap; }
+.ds-sample-head:hover { background: #f7f9ff; }
+.ds-sample-title { font-weight: 800; font-size: 14px; color: #1b2340; }
+.ds-caret { color: #6f778c; font-size: 12px; }
+.ds-avatars { display: flex; align-items: center; gap: 2px; }
+.ds-mini-avatar { width: 24px; height: 24px; font-size: 9px; }
+.ds-sample-body { padding: 4px 18px 18px; border-top: 1px solid #f0f2f9; }
+
+.ds-status { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: #f3f4f6; color: #4b5563; }
+.ds-status-PARTIAL { background: #fef3c7; color: #92400e; }
+.ds-status-COMPLETED, .ds-status-RESOLVED { background: #dcfce7; color: #166534; }
+.ds-status-CONFLICT, .ds-status-CONFLICT_RESOLUTION { background: #fee2e2; color: #991b1b; }
+
+.ds-asset { margin-bottom: 12px; }
+.ds-asset-text { background: #f7f8fc; border: 1px solid #e8edf8; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.7; white-space: pre-wrap; }
+
+.ds-task { border: 1px solid #e8edf8; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; background: #fff; }
+.ds-task-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.ds-task-state { font-size: 10px; font-weight: 700; border-radius: 6px; padding: 2px 8px; background: #fef3c7; color: #92400e; }
+.ds-task-SATISFIED { background: #dcfce7; color: #166534; }
+.ds-task-CONFLICT { background: #fee2e2; color: #991b1b; }
+.ds-entry { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 12px; padding: 8px 0; border-top: 1px solid #f0f2f9; align-items: start; }
+.ds-entry:first-of-type { border-top: none; }
+.ds-entry-value { font-size: 13px; color: #1b2340; line-height: 1.6; }
+.ds-text-answer { white-space: pre-wrap; }
+.ds-label { display: inline-block; font-size: 12px; background: #eef3ff; color: #1e40af; border-radius: 6px; padding: 2px 8px; margin: 0 6px 4px 0; }
+
+@media (max-width: 720px) {
+  .ds-entry { grid-template-columns: 1fr; }
+  .ds-dist-row { grid-template-columns: 80px 1fr 28px; }
+}

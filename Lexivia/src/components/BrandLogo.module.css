@@ -1,0 +1,30 @@
+.logo { --logo-height:54px; display:inline-block; position:relative; width:calc(var(--logo-height) * 2.419); height:var(--logo-height); flex-shrink:0; vertical-align:middle; line-height:1; overflow:hidden; transition:width .45s cubic-bezier(.22,.61,.36,1); }
+:global(html[data-theme="dark"]) .canvas,:global(html[data-theme="dark"]) .reference { filter:var(--logo-dark-filter); }
+:global(html[data-theme="dark"]) .reference { mix-blend-mode:normal; }
+.canvas { display:block; width:calc(var(--logo-height) * 2.419); height:var(--logo-height); max-width:none; overflow:visible; }
+.letter { fill:#211f54; font-family:'Plus Jakarta Sans',Inter,sans-serif; font-size:580px; font-weight:750; letter-spacing:0; transform-origin:0 0; transition:transform .45s cubic-bezier(.22,.61,.36,1),font-size .45s cubic-bezier(.22,.61,.36,1); }
+.e { transform:translate(1040px,1050px); }
+.x { transform:translate(1360px,1050px); }
+.bulb { transform:translate(1665px,638px) scale(5.75); transform-origin:0 0; transition:transform .45s cubic-bezier(.22,.61,.36,1); }
+.bulbTilt { transform:rotate(0deg); transform-origin:32px 40px; transition:transform .45s cubic-bezier(.22,.61,.36,1); }
+.v { transform:translate(2010px,1050px); }
+.i { transform:translate(2345px,1050px); }
+.a { transform:translate(2480px,1050px); }
+.compact { width:calc(var(--logo-height) * .705); }
+.compact .letter { font-size:155px; }
+.compact .letter text { text-anchor:middle; dominant-baseline:central; }
+.compact .e { transform:translate(445px,275px) rotate(82deg); }
+.compact .x { transform:translate(460px,380px) rotate(85deg); }
+.compact .bulb { transform:translate(412px,413px) scale(1.8); }
+.compact .bulbTilt { transform:rotate(55deg); }
+.compact .v { transform:translate(470px,595px) rotate(92deg); }
+.compact .i { transform:translate(460px,700px) rotate(98deg); }
+.compact .a { transform:translate(440px,805px) rotate(102deg); }
+@media(max-width:460px) { .logo { --logo-height:47px; } }
+@media(prefers-reduced-motion:reduce) { .logo,.letter,.bulb,.bulbTilt { transition:none; } }
+
+.reference { position:absolute; top:0; left:0; width:calc(var(--logo-height) * .709); height:var(--logo-height); mix-blend-mode:multiply; opacity:0; transition:opacity .12s; pointer-events:none; }
+.canvas { opacity:1; transition:opacity .12s; }
+.compact .reference { opacity:1; transition-delay:.33s; }
+.compact .canvas { opacity:0; transition-delay:.33s; }
+@media(prefers-reduced-motion:reduce) { .reference,.canvas { transition:none; } }

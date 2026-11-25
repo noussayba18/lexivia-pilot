@@ -1,0 +1,47 @@
+/* Only dark mode defines replacement tokens. Light mode retains page colors. */
+:root { color-scheme: light; }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --lx-canvas: #101827;
+  --lx-surface: #192335;
+  --lx-raised: #243247;
+  --lx-ink: #edf1fa;
+  --lx-muted: #b2bfd2;
+  --lx-line: #3b4b63;
+  --lx-teal: #65d3d5;
+  --lx-gold: #f8c865;
+  --lx-coral: #ff9b94;
+  --lx-teal-soft: #17393f;
+  --lx-gold-soft: #3b3222;
+  --lx-coral-soft: #3e2934;
+  --lx-navy-soft: #2a2c4c;
+}
+:root[data-theme="dark"] body { background: var(--lx-canvas); color: var(--lx-ink); }
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder { color: #94a5bd; }
+:root[data-theme="dark"] input:focus,
+:root[data-theme="dark"] textarea:focus,
+:root[data-theme="dark"] select:focus { border-color: #2bb8bf !important; box-shadow: 0 0 0 3px #2bb8bf25; }
+:root[data-theme="dark"] ::selection { background: #2bb8bf55; color: #fff; }
+
+.settings-content > #appearance { margin-bottom: 22px; }
+.theme-choices { border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; min-width: 0; }
+.theme-legend { font-size: 11px; color: #677a91; margin-bottom: 12px; }
+.theme-choice { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid #dfe7eb; border-radius: 15px; cursor: pointer; background: #fbfcfd; min-width: 0; }
+.theme-choice:has(input:checked) { border-color: #2bb8bf; box-shadow: 0 0 0 1px #2bb8bf; background: #eef8f6; }
+.theme-choice:has(input:focus-visible) { outline: 3px solid #2bb8bf; outline-offset: 4px; }
+.theme-choice input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.theme-choice-label { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: #211f54; }
+.theme-check { margin-left: auto; color: #087b83; visibility: hidden; }
+.theme-choice input:checked ~ .theme-choice-label .theme-check { visibility: visible; }
+.theme-choice-detail { color: #71849a; font-size: 10px; line-height: 1.6; }
+.theme-saved { margin-top: 17px; color: #71849a; font-size: 11px; line-height: 1.8; }
+/* Swatches are fixed illustrations of both themes, regardless of active mode. */
+.theme-swatch { --preview-bg: #f4f7fa; --preview-card: #fff; --preview-line: #d9e2eb; position: relative; height: 83px; border-radius: 9px; background: var(--preview-bg); border: 1px solid var(--preview-line); overflow: hidden; }
+.theme-swatch--dark { --preview-bg: #101827; --preview-card: #243247; --preview-line: #3b4b63; }
+.theme-swatch--system { background: linear-gradient(90deg,#f4f7fa 50%,#101827 50%); }
+.theme-swatch i { position: absolute; top: 0; left: 0; bottom: 0; width: 21%; background: var(--preview-card); border-right: 1px solid var(--preview-line); }
+.theme-swatch b { position: absolute; top: 14px; left: 30%; width: 42%; height: 6px; border-radius: 5px; background: #2bb8bf; }
+.theme-swatch em { position: absolute; top: 32px; left: 30%; width: 55%; height: 35px; border-radius: 5px; background: var(--preview-card); border: 1px solid var(--preview-line); }
+.theme-swatch > svg { position: absolute; right: 9px; top: 8px; color: #2bb8bf; }
+@media(max-width:550px) { .theme-choices { gap: 8px; }.theme-choice { padding: 9px; }.theme-choice-label { font-size: 11px; gap: 4px; }.theme-choice-label > svg:first-child { display: none; }.theme-choice-detail { font-size: 9px; }.theme-swatch { height: 68px; } }

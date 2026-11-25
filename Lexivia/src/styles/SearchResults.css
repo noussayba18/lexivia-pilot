@@ -1,0 +1,134 @@
+.search-body {
+    padding: 32px 28px 60px;
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search-section {
+    margin-bottom: 28px;
+}
+
+.search-section h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1c20;
+    letter-spacing: -0.03em;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.search-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 13px;
+    padding: 18px 20px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    transition: box-shadow 0.2s, transform 0.15s;
+    cursor: pointer;
+}
+
+.search-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.search-card h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1c20;
+    letter-spacing: -0.02em;
+}
+
+.search-card p {
+    margin: 0;
+    color: #888;
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+.search-open-btn {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #2d5cf6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.search-open-btn:hover {
+    background: #1e4adc;
+    transform: translateY(-1px);
+}
+
+.empty-search {
+    background: #f7f8fa;
+    border: 1px dashed #d4d8e4;
+    border-radius: 13px;
+    padding: 18px 20px;
+    color: #aaa;
+    font-size: 13.5px;
+}
+
+.search-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.search-clear-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.search-clear-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #fff0f0;
+    color: #c0392b;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.search-clear-btn:hover {
+    background: #ffe0e0;
+}
+
+@media (max-width: 1200px) {
+    .search-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .search-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-card {
+        min-height: 100px;
+    }
+}

@@ -1,0 +1,172 @@
+.csidebar {
+    width: 205px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #ececf3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 14px 18px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Back button */
+.csidebar-back {
+    height: 34px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding: 0 4px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    color: #8d94a8;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: color 0.15s;
+    white-space: nowrap;
+}
+
+.csidebar-back:hover {
+    color: #1359db;
+}
+
+/* Competition identity */
+.csidebar-identity {
+    margin-bottom: 18px;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.csidebar-brand {
+    font-size: 14px;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+.csidebar-sub {
+    display: none;
+}
+
+/* Nav */
+.csidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.csidebar-item {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #70778d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.csidebar-item:hover {
+    background: #f7f9ff;
+    color: #1359db;
+}
+
+.csidebar-item.active {
+    background: #f4f7ff;
+    color: #1359db;
+    font-weight: 700;
+}
+
+.csidebar-item.active::before {
+    display: none;
+}
+
+.csidebar-icon {
+    width: 16px;
+    min-width: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.csidebar-item.active .csidebar-icon,
+.csidebar-item:hover .csidebar-icon {
+    opacity: 1;
+}
+
+/* Bottom utilities */
+.csidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.csidebar-util {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #70778d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.csidebar-util:hover {
+    background: #f7f9ff;
+    color: #1359db;
+}
+
+.csidebar-util.active {
+    background: #f4f7ff;
+    color: #1359db;
+    font-weight: 700;
+}
+
+.csidebar-util .csidebar-icon {
+    opacity: 1;
+}
+.csidebar-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  flex-shrink: 0;
+}
+
+.csidebar-icon svg {
+  display: block;
+}
